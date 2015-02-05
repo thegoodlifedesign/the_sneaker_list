@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: TGL
+        psr4_prefix: TGL
+        src_path: app

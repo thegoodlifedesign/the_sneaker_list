@@ -1,0 +1,1 @@
+ShoeRequest is essentially the Order model but it better represents the business model calling it shoe request
