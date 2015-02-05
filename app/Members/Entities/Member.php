@@ -31,4 +31,40 @@ class Member extends Model implements AuthenticatableContract, CanResetPasswordC
 	 */
 	protected $hidden = ['password', 'remember_token'];
 
+	/**********************************/
+	/*
+     * MISCELLANEOUS METHODS
+     */
+	/**********************************/
+
+
+
+
+
+
+	/**********************************/
+	/*
+     * COMMANDS METHODS
+     */
+	/**********************************/
+
+
+
+
+
+
+	/**********************************/
+	/*
+     * RELATIONSHIP METHODS
+     */
+	/**********************************/
+
+	/**
+	 * @return \Illuminate\Database\Eloquent\Relations\HasMany
+	 */
+	public function shoeRequests()
+	{
+		return $this->hasMany('TGL\ShoeRequest\Entities\ShoeRequest');
+	}
+
 }

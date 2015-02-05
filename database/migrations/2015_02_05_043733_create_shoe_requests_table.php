@@ -16,7 +16,7 @@ class CreateShoeRequestsTable extends Migration {
 		{
 			$table->increments('id');
 			$table->integer('shoe_request_number')->unique()->unsigned()->index();
-			$table->integer('user_id')->unsiged()->index();
+			$table->integer('member_id')->unsiged()->index();
 			$table->integer('status_id')->unsiged()->index();
 			$table->integer('size');
 			$table->string('brand');
@@ -34,7 +34,7 @@ class CreateShoeRequestsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::dropphp ('shoe_requests');
+		Schema::drop('shoe_requests');
 	}
 
 }

@@ -23,7 +23,7 @@ class ShoeRequestTableSeeder extends \Illuminate\Database\Seeder
 
             DB::table('shoe_requests')->insert([
                 'shoe_request_number' => rand(10000000,99999999),
-                'user_id' => rand(1,50),
+                'member_id' => rand(1,50),
                 'status_id' => $status,
                 'size' => rand(6,15),
                 'brand' => $faker->firstName,
