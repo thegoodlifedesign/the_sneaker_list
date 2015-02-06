@@ -145,6 +145,11 @@ return [
 		'TGL\Core\Providers\RouteServiceProvider',
 		'TGL\Core\Providers\FlashServiceProvider',
 
+		/*
+		 * THIRD PARTY
+		 */
+		'Barryvdh\Cors\CorsServiceProvider',
+
 
 
 	],
