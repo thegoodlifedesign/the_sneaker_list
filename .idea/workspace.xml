@@ -117,8 +117,8 @@
       <file leaf-file-name="cors.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/cors.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41666666" vertical-offset="0" max-vertical-offset="1050">
-              <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.375" vertical-offset="0" max-vertical-offset="1071">
+              <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -790,8 +790,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/cors.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41666666" vertical-offset="0" max-vertical-offset="1050">
-          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.375" vertical-offset="0" max-vertical-offset="1071">
+          <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
           <folding />
         </state>
       </provider>

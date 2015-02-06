@@ -16,6 +16,7 @@ return array(
      |
      */
     'defaults' => [
+        'Access-Control-Allow-Credentials' => true,
         'supportsCredentials' => true,
         'allowedOrigins' => array(),
         'allowedHeaders' => array(),
