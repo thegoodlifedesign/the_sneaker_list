@@ -1,6 +1,6 @@
 <?php
 
-return array(
+return [
 
     /*
      |--------------------------------------------------------------------------
@@ -16,7 +16,7 @@ return array(
      |
      */
     'defaults' => [
-        'Access-Control-Allow-Credentials' => true,
+        'allowedCredentials' => true,
         'supportsCredentials' => true,
         'allowedOrigins' => array(),
         'allowedHeaders' => array(),
@@ -26,20 +26,20 @@ return array(
         'hosts' => array(),
     ],
 
-    'paths' => array(
-        'api/*' => array(
+    'paths' => [
+        'api/*' => [
             'allowedOrigins' => array('*'),
             'allowedHeaders' => array('*'),
             'allowedMethods' => array('*'),
             'maxAge' => 3600,
-        ),
-        '*' => array(
+        ],
+        '*' => [
             'allowedOrigins' => array('*'),
             'allowedHeaders' => array('Content-Type'),
             'allowedMethods' => array('POST', 'PUT', 'GET', 'DELETE'),
             'maxAge' => 3600,
             'hosts' => array('api.*'),
-        ),
-    ),
+        ],
+    ],
 
-);
+];
