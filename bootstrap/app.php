@@ -16,7 +16,6 @@ $app = new Illuminate\Foundation\Application(
 	realpath(__DIR__.'/../')
 );
 
-header('Access-Control-Allow-Credentials: true');
 
 /*
 |--------------------------------------------------------------------------
