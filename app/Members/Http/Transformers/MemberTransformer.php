@@ -7,7 +7,7 @@ use TGL\ShoeRequest\Http\Transformers\ShoeRequestTransformer;
 class MemberTransformer extends TransformerAbstract
 {
     protected $availableIncludes = [
-        'shoe_requests'
+        'shoe_request'
     ];
 
     public function transform(Member $member)
@@ -27,7 +27,7 @@ class MemberTransformer extends TransformerAbstract
         ];
     }
 
-    public function includeShoeRequests(Member $member)
+    public function includeShoeRequest(Member $member)
     {
         $shoeRequests = $member->shoeRequests;
 
