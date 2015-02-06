@@ -28,13 +28,13 @@ return [
 
     'paths' => [
         'api/*' => [
-            'allowedOrigins' => array('*'),
+            'allowedOrigins' => array('http://localhost:4500'),
             'allowedHeaders' => array('*'),
             'allowedMethods' => array('*'),
             'maxAge' => 3600,
         ],
         '*' => [
-            'allowedOrigins' => array('*'),
+            'allowedOrigins' => array('http://localhost:4500'),
             'allowedHeaders' => array('Content-Type'),
             'allowedMethods' => array('POST', 'PUT', 'GET', 'DELETE'),
             'maxAge' => 3600,
