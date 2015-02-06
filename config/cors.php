@@ -28,7 +28,7 @@ return [
 
     'paths' => [
         'api/*' => [
-            'allowedOrigins' => array('http://localhost:4500'),
+            'allowedOrigins' => array('*'),
             'allowedHeaders' => array('*'),
             'allowedMethods' => array('*'),
             'maxAge' => 3600,
