@@ -18,7 +18,7 @@ return [
     'defaults' => [
         'allowedCredentials' => true,
         'supportsCredentials' => true,
-        'allowedOrigins' => array('*'),
+        'allowedOrigins' => array('http://contourbeta.com'),
         'allowedHeaders' => array('*'),
         'allowedMethods' => array('*'),
         'exposedHeaders' => array('*'),
@@ -28,13 +28,13 @@ return [
 
     'paths' => [
         'api/*' => [
-            'allowedOrigins' => array('*'),
+            'allowedOrigins' => array('http://contourbeta.com'),
             'allowedHeaders' => array('*'),
             'allowedMethods' => array('*'),
             'maxAge' => 3600,
         ],
         '*' => [
-            'allowedOrigins' => array('*'),
+            'allowedOrigins' => array('http://contourbeta.com'),
             'allowedHeaders' => array('Content-Type'),
             'allowedMethods' => array('POST', 'PUT', 'GET', 'DELETE'),
             'maxAge' => 3600,
