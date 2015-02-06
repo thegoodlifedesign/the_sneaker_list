@@ -1,7 +1,7 @@
 <?php namespace TGL\ShoeRequest\Http\Controllers;
 
 use Illuminate\Support\Facades\Input;
-use League\Fractal\Manager;
+use TGL\Src\Fractal\Manager;
 use TGL\ShoeRequest\Commands\PlaceShoeRequestCommand;
 use TGL\ShoeRequest\Exceptions\ShoeRequestNotFoundException;
 use TGL\ShoeRequest\Http\Requests\PlaceShoeRequestRequest;

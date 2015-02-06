@@ -2,7 +2,7 @@
 
 
 use Illuminate\Support\Facades\Input;
-use League\Fractal\Manager;
+use TGL\Src\Fractal\Manager;
 use TGL\Core\Http\Controllers\Api\ApiController;
 use TGL\Members\Exceptions\MemberNotFoundException;
 use TGL\Members\Http\Transformers\MemberTransformer;

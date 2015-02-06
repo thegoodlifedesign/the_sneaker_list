@@ -1,6 +1,6 @@
 <?php namespace TGL\ShoeRequest\Http\Transformers;
 
-use League\Fractal\TransformerAbstract;
+use TGL\Src\Fractal\TransformerAbstract;
 use TGL\Members\Http\Transformers\MemberTransformer;
 use TGL\ShoeRequest\Entities\ShoeRequest;
 

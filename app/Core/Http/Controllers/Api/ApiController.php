@@ -1,9 +1,9 @@
 <?php namespace TGL\Core\Http\Controllers\Api;
 
-use League\Fractal\Manager;
-use League\Fractal\Pagination\IlluminatePaginatorAdapter;
-use League\Fractal\Resource\Collection;
-use League\Fractal\Resource\Item;
+use TGL\Src\Fractal\Manager;
+use TGL\Src\Fractal\Pagination\IlluminatePaginatorAdapter;
+use TGL\Src\Fractal\Resource\Collection;
+use TGL\Src\Fractal\Resource\Item;
 use TGL\Core\Http\Controllers\Controller;
 
 class ApiController extends Controller
