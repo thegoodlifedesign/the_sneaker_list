@@ -1,6 +1,7 @@
-<?php namespace ThreeAccents\Core\Http\Controllers\Api;
+<?php namespace TGL\Core\Http\Controllers\Api;
 
 use League\Fractal\Manager;
+use League\Fractal\Pagination\IlluminatePaginatorAdapter;
 use League\Fractal\Resource\Collection;
 use League\Fractal\Resource\Item;
 use TGL\Core\Http\Controllers\Controller;
@@ -76,6 +77,16 @@ class ApiController extends Controller
     protected function respondWithItem($item, $callback)
     {
         $resource = new Item($item, $callback);
+
+        $rootScope = $this->fractal->createData($resource);
+
+        return $this->respondWithArray($rootScope->toArray());
+    }
+
+    protected function respondWithPaginator($collection, $callback, $paginator)
+    {
+        $resource = new Collection($collection, $callback);
+        $resource->setPaginator(new IlluminatePaginatorAdapter($paginator));
 
         $rootScope = $this->fractal->createData($resource);
 

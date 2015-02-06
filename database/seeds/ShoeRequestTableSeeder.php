@@ -18,7 +18,7 @@ class ShoeRequestTableSeeder extends \Illuminate\Database\Seeder
             }
             else
             {
-                $price = $faker->randomDigitNotNull;
+                $price = rand(80,5000);
             }
 
             DB::table('shoe_requests')->insert([

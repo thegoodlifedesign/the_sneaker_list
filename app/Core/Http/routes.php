@@ -11,11 +11,12 @@
 |
 */
 
-$router->get('/', 'Core\Http\Controllers\WelcomeController@index');
+$router->get('/api/v1/token', function()
+{
+	return [
+		'token' => csrf_token()
+	];
+});
 
-$router->get('home', 'Core\Http\Controllers\HomeController@index');
 
-$router->controllers([
-	'auth' => 'Core\Http\Controllers\Auth\AuthController',
-	'password' => 'Core\Http\Controllers\Auth\PasswordController',
-]);
+

@@ -4,6 +4,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class ShoeRequest extends Model
 {
+    protected $fillable = [
+        'brand',
+        'model',
+        'size',
+        'img',
+        'message'
+    ];
+
     /**********************************/
     /*
      * MISCELLANEOUS METHODS
@@ -21,7 +29,11 @@ class ShoeRequest extends Model
      */
     /**********************************/
 
-
+    public static function place($brand, $model, $size, $img, $message)
+    {
+        $shoeRequest = new static(compact('brand', 'model', 'size', 'img', 'message'));
+        return $shoeRequest;
+    }
 
 
 

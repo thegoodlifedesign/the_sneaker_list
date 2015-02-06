@@ -1,5 +1,22 @@
 <?php
 
+header('Access-Control-Max-Age: 1728000');
+header('Access-Control-Allow-Origin: http://localhost:4500');
+header('Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT');
+header('Access-Control-Allow-Headers: Content-MD5, X-Alt-Referer');
+header('Access-Control-Allow-Credentials: true');
+header("Content-Type: application/json; charset=utf-8");
+
+if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
+	// return only the headers and not the content
+	// only allow CORS if we're doing a GET - i.e. no saving for now.
+	if (isset($_SERVER['HTTP_ACCESS_CONTROL_REQUEST_METHOD']) && $_SERVER['HTTP_ACCESS_CONTROL_REQUEST_METHOD'] == 'GET') {
+		header('Access-Control-Allow-Origin: http://localhost:4500');
+		header('Access-Control-Allow-Headers: X-Requested-With');
+	}
+	exit;
+}
+
 /*
 |--------------------------------------------------------------------------
 | Create The Application
