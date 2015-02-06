@@ -30,7 +30,7 @@ return [
         'api/*' => [
             'allowedOrigins' => array('http://localhost:4500'),
             'allowedHeaders' => array('*'),
-            'allowedMethods' => array('*'),
+            'allowedMethods' => array('POST', 'PUT', 'GET', 'DELETE'),
             'maxAge' => 3600,
         ],
         '*' => [
