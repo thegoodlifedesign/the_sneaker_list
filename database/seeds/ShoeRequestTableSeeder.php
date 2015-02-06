@@ -1,6 +1,6 @@
 <?php
 
-class ShoeRequestTableSeeder extends \Illuminate\Database\Seeder
+class ShoeRequestTableSeeder extends AbstractTableSeeder
 {
     public function run()
     {

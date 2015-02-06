@@ -1,6 +1,6 @@
 <?php
 
-class StatusesTableSeeder extends \Illuminate\Database\Seeder
+class StatusesTableSeeder extends AbstractTableSeeder
 {
     public function run()
     {
